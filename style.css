@@ -1,0 +1,294 @@
+html{
+    font-size: 62.5%; /*Hacks para adaptar mejor los rem's*/
+    font-family: 'Krub', sans-serif;
+    background: #f8f8f8;
+}
+
+
+body{
+    font-size: 16px; /*Hacks para adaptar mejor los rem's*/
+    
+    
+}
+
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: [inicio] 1fr[linea2] 1fr [linea3] 1fr [linea4] 1fr [linea5] 1fr [linea6] 1fr [linea7] 1fr [linea8] 1fr [final];
+    grid-template-rows: [inicio] 5rem [linea2] 5rem [linea3] 30rem [linea4] 30rem [linea5] 40rem [linea6] 50rem [linea7]50rem[linea8]50rem[final];
+
+    background:red;
+}
+
+.item{
+    background: lightblue;
+    padding: 10px;
+    border: solid 1px red;
+}
+
+.item:nth-of-type(1){
+
+    grid-column: inicio/final;
+    grid-row: inicio/linea3;
+    
+}
+
+.item:nth-of-type(2){
+
+    grid-column: inicio/final;
+    
+    
+}
+
+
+
+.item:nth-of-type(3){
+
+    grid-column: inicio/final;
+
+    display: grid;
+    
+    
+    grid-template-columns: 35rem 1fr 10rem;
+    
+    justify-items: start;
+    
+}
+
+.item:nth-of-type(4){
+
+    grid-column: inicio/final;
+    
+    
+}
+
+.contenedor-juridico{
+
+
+    
+    display: flex;
+    justify-content: space-around;
+   
+    
+    
+    }
+
+    .container-derechos{
+
+
+        height: 18.5rem;
+        width: 16.5rem;
+        
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        border-radius: 1rem;
+        
+                
+        }
+
+        .derechos img{
+
+            display: block;
+            margin: auto;
+            padding-top: 2rem;
+            height: 10rem;
+            width: 10rem;
+            
+        }
+
+        .nombre-derechos{
+
+            display: block;
+            margin: auto;
+            padding-top:1rem ;
+            
+            text-align: center;
+            text-decoration: none;
+            font-family: Lato;
+            line-height: 24px;
+            font-weight: normal;
+            font-style: normal;
+            color: whitesmoke;
+            font-size: 1.6rem;
+
+           
+            
+        }
+
+        .contenido h2{
+            text-align: center;
+            font-family: Lato;
+            line-height: 24px;
+            font-weight: normal;
+            font-style: normal;
+            color: whitesmoke;
+            font-size: 3rem;
+           
+        }
+
+
+
+
+.contenido h1{
+    text-align: center;
+    font-family: Lato;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.contenido p{
+
+    text-align: center;
+    font-family: Lato;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+.temis img{
+    height: 28.5rem;
+    margin-top: 0rem;
+}
+
+    
+
+.item:nth-of-type(5){
+
+    grid-column: inicio/final;
+
+
+    
+    
+}
+
+ .contenedor-perfil{
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+
+    
+}
+
+ .contenedor-perfil a{
+    
+    height: 0rem;
+
+    
+    
+
+    
+}
+
+ .contenedor-perfil .img-abogados{
+
+    background-color: blue;
+    height: 30rem;
+    width: 30rem;
+    border: crimson solid 0.1rem;
+    
+}
+
+
+ .contenedor-perfil .img-abogados:hover{
+    
+    color: rgb(158, 157, 157);
+    opacity: 0.5;
+    
+}
+
+ .contenedor-perfil .img-abogados .ver-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30rem;
+    width: 30rem;
+    
+    
+
+    
+   
+}
+
+.item:nth-of-type(6){
+
+    grid-column: inicio/final;
+    
+    
+}
+
+.contenedor-noticias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .noticias{
+
+    background-color: blue;
+    height: 30rem;
+    width: 30rem;
+    border: crimson solid 0.1rem;
+}
+
+
+.item:nth-of-type(7){
+
+    grid-column: inicio/final;
+    
+    
+}
+
+.contenedor-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo-firma{
+    background-color: blue;
+    height: 5rem;
+    width: 30rem;
+    border: crimson solid 0.1rem;
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: end;
+    
+    
+}
+
+.navegacion-principal a{
+    
+    text-align: center;
+    font-family: Lato;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: #e4ac00;
+    color: black;
+    border-radius: 10rem;
+    border-bottom: 6px double rgb(0, 0, 0);
+}
