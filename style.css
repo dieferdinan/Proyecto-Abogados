@@ -1,7 +1,7 @@
 html{
     font-size: 62.5%; /*Hacks para adaptar mejor los rem's*/
     font-family: 'Krub', sans-serif;
-    background: #f8f8f8;
+    background: #04395e;
 }
 
 
@@ -19,7 +19,7 @@ body{
     grid-template-columns: [inicio] 1fr[linea2] 1fr [linea3] 1fr [linea4] 1fr [linea5] 1fr [linea6] 1fr [linea7] 1fr [linea8] 1fr [final];
     grid-template-rows: [inicio] 5rem [linea2] 5rem [linea3] 30rem [linea4] 30rem [linea5] 40rem [linea6] 50rem [linea7]50rem[linea8]50rem[final];
 
-    background:red;
+    
 }
 
 .item{
@@ -32,12 +32,18 @@ body{
 
     grid-column: inicio/final;
     grid-row: inicio/linea3;
+    background: #04395e;
     
 }
 
 .item:nth-of-type(2){
 
+    display: grid;
     grid-column: inicio/final;
+    grid-template-columns: 1fr 1fr 10rem;
+    justify-items: self-end;
+    
+    background: #04395e;
     
     
 }
@@ -54,6 +60,9 @@ body{
     grid-template-columns: 35rem 1fr 10rem;
     
     justify-items: start;
+    
+
+    background: black;
     
 }
 
